@@ -10,12 +10,12 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-west-2"
-  app: gsg-signup
-  env: GsgSignup-env
+  app: "gsg-signup"
+  env: "GsgSignup-env"
   bucket_name: elasticbeanstalk-us-west-2-354844110981
-  bucket_path: gsg-signup
+  bucket_path: "gsg-signup"
   on:
     branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key:
-      secure: "$AWS_SECRET_KEY"
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
